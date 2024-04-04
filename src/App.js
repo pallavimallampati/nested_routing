@@ -1,4 +1,4 @@
-import {BrowserRouter,Route,Routes}from "react-router-dom"
+import {HashRouter,Route,Routes}from "react-router-dom"
 import Nav from "./Nav"
 import Home from "./Home"
 import About from "./About"
@@ -8,7 +8,7 @@ import P2 from "./P2"
 import P3 from "./P3"
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Nav/>
     <Routes>
       <Route path="/"element={<Home/>}/>
@@ -21,7 +21,8 @@ const App = () => {
       
     </Routes>
     
-    </BrowserRouter>
+    </HashRouter>
+  
   )
 }
 
